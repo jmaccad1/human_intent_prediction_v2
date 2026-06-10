@@ -41,7 +41,7 @@ conda activate ViTGaze
 Install the project dependencies from the parent directory:
 
 ```powershell
-pip install -r ..\requirements_0.txt
+pip install -r ..\requirements.txt
 ```
 
 Install the Detectron2 revision used by ViTGaze:
@@ -87,7 +87,7 @@ The training dataset root is currently set in
 `configs/common/dataloader.py`:
 
 ```python
-DATA_ROOT = r"C:\Users\janna\Downloads\ViTGaze"
+DATA_ROOT = r"\human_intent_prediction_v2\ViTGaze"
 ```
 
 Change `DATA_ROOT` if the dataset is moved. The following files must exist
