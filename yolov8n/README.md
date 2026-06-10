@@ -3,28 +3,17 @@
 This folder contains entry points for training and validating `yolov8n.pt` on
 the generated `yolo_hiphop` custom dataset.
 
-The `yolo_hiphop/data.yaml` split is generated from `hiphop_v1` with `P1`-`P16`
-as the training set and `P17`-`P20` as the test set.
+The `yolo_hiphop/data.yaml` split is generated from `merged dataset` with `P1`-`P16`, `P21`-`P36`
+as the training set and `P17`-`P20`,`P37`-`P40`  as the test set.
 
 ## Generate Dataset
 
-Run this from the repo root after frames have been extracted into
-`hiphop_gaze/images`:
+Run this from the repo root to restructure the ViTGaze schema image frames to yolov8n schema and copy the annotations from the datasets link titled `yolo_hiphop_merged`
 
 ```
-python tools\gen_yolo_hiphop.py --clean
+python tools\vitgaze_to_yolov8n.py
 ```
 
-This writes:
-
-```text
-yolo_hiphop/
-  data.yaml
-  images/train
-  images/test
-  labels/train
-  labels/test
-```
 
 ## Train
 
