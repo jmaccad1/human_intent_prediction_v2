@@ -1,4 +1,4 @@
-# Train and Test ViTGaze on HIP-HOP Full
+# Train and Test ViTGaze on Human Intent Prediction Dataset Full (V1 + V2)
 
 This guide trains and evaluates ViTGaze with:
 
